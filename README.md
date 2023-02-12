@@ -11,29 +11,20 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# device_data_plugin
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Provides information about mobile device such as the manufacturer, model, operating system name and version, device type and whether it is a physical device.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Import this package
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+final deviceDataPlugin = DeviceDataPlugin();
+final devicePhysicalSize = deviceDataPlugin.retrieveDeviceSize();
+final deviceData = await deviceDataPlugin.retrieveDeviceData();
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
